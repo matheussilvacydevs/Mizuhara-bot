@@ -150,10 +150,10 @@ const author = `${pushname}` //ur sticker watermark author
 
 // bem vindo Grupo
 
-/*  Mizuhara.ev.on('group-participants.update',async Update => {
+.  Mizuhara.ev.on('group-participants.update',async Update => {
    let UpdateMenbs =  await Mizuhara.groupMetadata(Update.id)
         try {
-            let welcomegif = 'https://i.pinimg.com/originals/24/8e/47/248e47a848da59d73bd1b58b34b65a7c.gif'
+            let welcomegif = 'https://i.ibb.co/MCLQczy/47d6fdf8-4d77-4f83-aefe-75cb95a3fc88.gif'
             let participants = Update.participants 
            console.log(participants)
                 if (Update.action == 'add') {
@@ -178,15 +178,14 @@ footer: '@mizuhara',
 buttons: buttons,
 headerType: 4,
 }
-//Mizuhara.sendMessage(from, buttonsMessage) { video: { url: welcomegif }
+            Mizuhara.sendMessage(from, buttonsMessage) { video: { url: welcomegif }
             Mizuhara.sendMessage(Update.id,buttonsMessage, {gifPlayback: true })
                   
            }
 }catch (err) {
             console.log(err)
         }})
-        */
-
+       
 /// MÉDIA ETC
 const quoted = ms.quoted ? ms.quoted : msg
 const mime = (quoted.mess || quoted).mimetype || ''
@@ -408,7 +407,7 @@ Mizuhara.sendMessage(from,{
      reaction("🥱");
      }
 
-break*/
+break
    }}catch (error) {
           console.log(error)
         //  enviar(error);
