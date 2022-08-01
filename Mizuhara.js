@@ -150,7 +150,7 @@ const author = `${pushname}` //ur sticker watermark author
 
 // bem vindo Grupo
 
-  Mizuhara.ev.on('group-participants.update',async Update => {
+ /* Mizuhara.ev.on('group-participants.update',async Update => {
    let UpdateMenbs =  await Mizuhara.groupMetadata(Update.id)
         try {
             let welcomegif = 'https://i.ibb.co/MCLQczy/47d6fdf8-4d77-4f83-aefe-75cb95a3fc88.gif'
@@ -184,7 +184,7 @@ headerType: 4,
            }
 }catch (err) {
             console.log(err)
-        }})
+        }}) */
        
 /// MÉDIA ETC
 const quoted = ms.quoted ? ms.quoted : msg
