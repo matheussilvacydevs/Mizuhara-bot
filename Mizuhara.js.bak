@@ -150,7 +150,7 @@ const author = `${pushname}` //ur sticker watermark author
 
 // bem vindo Grupo
 
-  Mizuhara.ev.on('group-participants.update',async Update => {
+.  Mizuhara.ev.on('group-participants.update',async Update => {
    let UpdateMenbs =  await Mizuhara.groupMetadata(Update.id)
         try {
             let welcomegif = 'https://i.ibb.co/MCLQczy/47d6fdf8-4d77-4f83-aefe-75cb95a3fc88.gif'
@@ -178,7 +178,7 @@ footer: '@mizuhara',
 buttons: buttons,
 headerType: 4,
 }
-  Mizuhara.sendMessage(from, buttonsMessage) { video: { url: welcomegif }
+            Mizuhara.sendMessage(from, buttonsMessage) { video: { url: welcomegif }
             Mizuhara.sendMessage(Update.id,buttonsMessage, {gifPlayback: true })
                   
            }
@@ -350,7 +350,6 @@ if(!isCriador) return enviar(msg.dono)
 update = execSync('git remote set-url origin https://github.com/flaviotn595/Mizuhara-Bot.git && git pull')
 enviar(update.toString())
 }
-
 break
 case 'ban':{
   if(!isGroup) return enviar(mess.grupos)
