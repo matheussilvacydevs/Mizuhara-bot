@@ -359,7 +359,7 @@ case 'ban':{
 }
 break 
  
-
+/*
  case 'sticker':
    //chamando a função de donwload;
    const stream = await downloadContentFromMessage(msg.message.imageMessage, 'image');
@@ -409,6 +409,7 @@ Mizuhara.sendMessage(from,{
      }
 
 break
+*/
 
    }}catch (error) {
           console.log(error)
