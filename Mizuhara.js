@@ -84,12 +84,11 @@ const data = moment.tz('America/Sao_Paulo').format('DD/MM/YY')
       if (connection === 'close') {
      const shouldReconnect = (lastDisconnect.error =
           Boom?.output?.statusCode !== DisconnectReason.loggedOut);
-          console.log("connection closed due to ",
-          lastDisconnect.error,", reconnecting ",shouldReconnect);
+          
         if (shouldReconnect) {
           startMizuhara()}
       } else if (connection === 'open') {
-        console.log("CONEXÃO BEM SUCEDIDA!");
+        
       }});
     Mizuhara.ev.on("creds.update",saveState);
     Mizuhara.ev.on('messages.upsert', async ms => {
@@ -227,22 +226,9 @@ const isCriador = dono.includes(sender)
 
 //if 
 
-if(!isCmd && !isGroup) console.log(
-color('[ MSG E CMD  EM PV ]','red'),'\n',
-color('NOME :','yellow'),color(pushname,'cyan'),'\n',
-color('MSG :','yellow'),color(budy,'cyan'),'\n',
-color('CMD :','yellow'),color(comando,'cyan'),'\n',
-color('HORA :','yellow'),color(hora,'cyan'),'\n',
-color('DATA :','yellow'),color(data,'cyan'),'\n')
+if(!isCmd && !isGroup) {}
 
-if(isCmd && isGroup) console.log(
-color('[ CMD EM GRUPO ]','red'),'\n',
-color('GRUPP :','yellow'),color(groupName,'cyan'),
-color('NOME :','yellow'),color(pushname,'cyan'),'\n',
-color('CMD :','yellow'),color(comando,'cyan'),
-color('MSG :', 'blue',),color(budy, 'cyan'),
-color('HORA :','yellow'),color(hora,'cyan'),'\n',
-color('DATA :','yellow'),color(data,'cyan'),'\n')
+if(isCmd && isGroup) {}
 
 switch(comando){
 
